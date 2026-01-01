@@ -2,7 +2,7 @@
 name: User Story
 about: User story template is ideal for describing desired outcomes that drive collaboration
   and value in Agile teams
-title: User Story
+title: ''
 labels: ''
 assignees: ''
 
