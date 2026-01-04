@@ -16,7 +16,7 @@ jobs:
       postgres:
         image: postgres:alpine
         ports:
-          - 5432: 5432
+          - 5432:5432
         env:
           POSTGRES_PASSWORD: pgs3cr3t
           POSTGRES_DB: testdb
@@ -43,5 +43,4 @@ jobs:
       - name: Run unit tests with Nose
         run: nosetests 
         env:
-          DATABASE_URI: "postgresql://postgres:pgs3cr3t@postgres:5432/testdb"
-      
+          DATABASE_URI: "postgresql://postgres:pgs3cr3t@postgres:5432/testdb"  
